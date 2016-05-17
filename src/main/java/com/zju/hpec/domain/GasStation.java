@@ -11,10 +11,9 @@ public class GasStation {
 	private String address;
 	private Position position;
 	
-	public GasStation(String name,String address,Position position){
+	public GasStation(String name,String address){
 		this.name = name;
 		this.address = address;
-		this.position = position;
 	}
 
 	public String getName() {
@@ -35,4 +34,10 @@ public class GasStation {
 	public void setPosition(Position position) {
 		this.position = position;
 	}
+
+	@Override
+	public String toString() {
+		return "GasStation [name=" + name + ", address=" + address + ", position=" + position + "]\n";
+	}
+	
 }
